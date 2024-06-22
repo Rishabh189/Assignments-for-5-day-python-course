@@ -1,0 +1,90 @@
+Understanding Variables, Comments, and Data Types in Python
+
+Multiple Choice Questions (Choose the correct answer)
+1. What symbol is used to start a single-line comment in Python?
+   - a) `//`
+   - b) `/*`
+   - c) #
+   - d) `<!--`
+   
+   Ans : c) #
+
+2. Which of these is a valid variable assignment in Python?
+   - a) `2nd_number = 10`
+   - b) `number-2 = 10`
+   - c) `number_two = 10`
+   - d) `number.2 = 10`
+   
+   Ans : c) `number_two = 10`
+
+3. What data type in Python is used to represent whole numbers?
+   - a) String
+   - b) Integer
+   - c) Character
+   - d) Float
+   
+   Ans : b) Integer
+
+4. In Python, what does the term "dynamic typing" mean?
+   - a) Variables can change types during execution.
+   - b) The type of a variable is checked at compile time.
+   - c) Variables must be typed dynamically on the keyboard.
+   - d) The type of a variable cannot be inferred by the interpreter.
+   
+   Ans : a) Variables can change types during execution.
+
+5. Which of these is not a Python data type?
+   - a) `list`
+   - b) `str`
+   - c) `int`
+   - d) `perform`
+   
+   Ans : d) `perform`
+
+Fill in the Blanks
+1. In Python, a variable's value can be changed after it has been created, making variables __mutable_______.
+2. To write a multi-line comment in Python, a common practice is to use __#_______ at the beginning of each line.
+
+True/False
+1. A variable name in Python can begin with a number. (True/False) :  False
+2. Triple-quoted strings (`'''` or `"""`) are often used as single-line comments in Python. (True/False) : False
+
+
+Match the Columns
+Match the terms in Column A with their descriptions in Column B.
+
+A
+B
+
+
+1. #
+a. Symbol for single-line comment
+2. `int`
+b. Data type for numbers with a decimal point
+3. `float`
+c. Data type for whole numbers
+4. `"apple"`
+d. Example of a string
+5. Variable
+e. A symbolic name referring to a value stored in memory
+
+Ans : 1- a, 2- c, 3- b, 4- d, 5-e
+
+
+Theory + Practical Code Based Questions
+
+Question 1: Variable Assignment and Usage
+Theory: Explain the process of variable assignment in Python. What rules should be followed while naming a variable?
+Practical: Write a Python code to assign the value `10` to a variable named `my_number` and then print the value of `my_number`.
+
+Question 2: Understanding Data Types
+Theory: Describe the difference between integers and floating-point numbers in Python.
+Practical: Create two variables, `whole_number` assigned with an integer and `decimal_number` assigned with a floating-point number. Print their values.
+
+Question 3: Strings in Python
+Theory: What is a string in Python, and how is it different from a character?
+Practical: Define a string variable named `greeting` with the value `"Hello, world!"`. Print the variable value.
+
+Question 4: Single-line and Multi-line Comments
+Theory: Explain the purpose of comments in Python and differentiate between single-line and multi-line comments.
+Practical: Write a Python code snippet that includes both a single-line comment and a multi-line comment.

@@ -1,0 +1,68 @@
+#Python function for prime number :
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num == 2:
+        return True
+    if num % 2 == 0:
+        return False
+    
+    for i in range(3, int(num**0.5) + 1, 2):
+        if num % i == 0:
+            return False
+    return True
+
+Logic:
+
+This line is part of the function that checks if a number is prime, and it focuses on testing potential divisors to see if any of them evenly divide the given number num. Here’s what each part of this line does:
+
+range(3, int(num**0.5) + 1, 2):
+
+range(start, stop, step): This function generates a sequence of numbers starting from start up to (but not including) stop, incrementing by step each time.
+start = 3:
+
+The sequence starts at 3. This is because we've already checked the number 2 separately (as the only even prime) and all other even numbers are not prime if they are greater than 2.
+stop = int(num**0.5) + 1:
+
+num**0.5 calculates the square root of num.
+int(num**0.5) converts the square root to an integer (discarding any fractional part).
+int(num**0.5) + 1 ensures that the range includes the integer part of the square root. This is because we need to check all numbers up to and including the square root of num.
+step = 2:
+
+The sequence increments by 2, meaning it only includes odd numbers (3, 5, 7, 9, etc.).
+We skip even numbers because any even number greater than 2 is not prime (we already handled the case for num % 2 == 0 separately).
+Why Check Up to the Square Root?
+If num can be factored into two factors a and b (num = a * b), then one of those factors must be less than or equal to the square root of num. For example, if num = 36, its factors are:
+
+1
+×
+36
+1×36
+2
+×
+18
+2×18
+3
+×
+12
+3×12
+4
+×
+9
+4×9
+6
+×
+6
+6×6
+Notice that after the square root (which is 6 for 36), the factors start repeating in reverse order. Therefore, checking up to the square root is sufficient to determine if num has any divisors other than 1 and itself.
+
+Example
+Let's say num = 29:
+
+The square root of 29 is approximately 5.39.
+int(29**0.5) + 1 is 6.
+The range will be range(3, 6, 2), which generates the numbers [3, 5].
+The loop will check if 29 is divisible by 3 or 5. Since it isn't, the function will conclude that 29 is a prime number.
+
+This loop ensures that the function is efficient, only checking the necessary potential divisors without redundant checks.

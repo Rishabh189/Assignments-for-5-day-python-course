@@ -1,0 +1,59 @@
+Multiple Choice Questions
+Q1. What output does the following code snippet produce?
+
+print(8, 5, 2023, sep='/')
+
+
+Ans : b) 8/5/2023 (It will use / as sparator between ecaach value to print)
+
+
+Q2. Which of the following is considered a valid variable name in Python?
+a) 2things
+b) _my_string
+c) try
+d) None of the above
+
+Ans : c)try
+
+Q3. After executing x = 3.5, what data type is x?
+a) int
+b) str
+c) float
+d) complex
+
+Ans :  c) float
+
+Fill-in-the-Blanks
+Q4. In Python, the _int()_____ function is utilised to convert a floating-point number to an integer.
+Q5. The __end____ parameter in the print() function dictates what is printed at the end of the output.
+Q6. A __Boolean____ type in Python can hold one of two values: True or False.
+
+True or False
+Q7. Variable names in Python are case-sensitive.
+True
+False
+
+Ans : True
+
+Q8. The print() function is limited to printing strings exclusively.
+True
+False
+
+Ans: False
+
+Q9. In Python, the string "100" is equivalent to the integer 100.
+True
+False
+
+Ans : False
+
+
+Coding Challenges
+
+Q11. Develop a Python script to calculate the area of a rectangle. Your program should take the rectangle's length and width, and then display the calculated area.
+
+Ans : Uploaded a separate file as "Day1_Q11_Area_of_Rect.py"
+
+Q12. Write a Python program that converts temperatures from Celsius to Fahrenheit. Use the formula (Celsius * 9/5) + 32 to perform the conversion.
+
+Ans : Uploaded a separate file as "Day1_Q12_Cel_To_Fahr.py"
